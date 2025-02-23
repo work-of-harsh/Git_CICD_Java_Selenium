@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Ecommerce_purchase">
+
+<listeners>
+<listener class-name="Harsh_Project.Test_Components.Listeners"/>
+</listeners>
+
+ <test name="Mobile_shopping">
+    <classes>
+      <class name="Harsh_Project.Selenium_Framework_Harsh.ShopPage"/>
+    </classes>
+  </test>
+</suite> 
