@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="5" name="Test(failed)" verbose="0">
+<suite thread-count="6" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="6" parallel="methods" name="Test(failed)" verbose="0">
     <classes>
-      <class name="Harsh_Project.Selenium_Framework_Harsh.ShopPage2_Fail_TestCase">
+      <class name="Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework">
         <methods>
-          <include name="PageShop"/>
+          <include name="Mobile_Shop2"/>
+          <include name="launching_form_filling_page"/>
+          <include name="tearDowwn"/>
+          <include name="Mobile_Shop1" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Harsh_Project.Selenium_Framework_Harsh.ShopPage2_Fail_TestCase -->
+      </class> <!-- Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

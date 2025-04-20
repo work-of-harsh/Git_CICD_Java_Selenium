@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Harsh_Project.Selenium_Framework_Harsh.ShopPage">
+      <class name="Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework">
         <methods>
-          <include name="PageShop"/>
+          <include name="Mobile_Shop2"/>
+          <include name="launching_form_filling_page"/>
+          <include name="Mobile_Shop1" invocation-numbers="0 1"/>
+          <include name="tearDowwn"/>
         </methods>
-      </class> <!-- Harsh_Project.Selenium_Framework_Harsh.ShopPage -->
+      </class> <!-- Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

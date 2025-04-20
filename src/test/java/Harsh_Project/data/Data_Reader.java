@@ -11,7 +11,7 @@ import org.apache.commons.io.FileUtils;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
- // this class is already in base class
+ // this class is already in base class,you can run this java file to check json content.
 public class Data_Reader {
 	public static void main(String[] args) throws IOException {
 		Data_Reader obj = new Data_Reader();

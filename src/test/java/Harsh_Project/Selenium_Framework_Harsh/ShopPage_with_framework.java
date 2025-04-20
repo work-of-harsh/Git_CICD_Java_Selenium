@@ -61,9 +61,9 @@ public class ShopPage_with_framework extends BaseTest{
 	@DataProvider    //annotation used for parameterization
 	public Object[][] getData() throws IOException {  //we use 2D array type as object, as parameter can be integer as well as string.
 		//return new Object[][] { {"Harsh Vibhor Singh","thug@tcs.com","thug","Nokia Edge","India","Success! Thank you! Your order will be delivered in next few weeks :-)."},{"Harsh Vibhor Singh","thug@tcs.com","thug","Blackberry","China","Success! Thank you! Your order will be delivered in next few weeks :-)."} };
-		Data_Reader obj = new Data_Reader();
+		Data_Reader obj = new Data_Reader();  //this data reader is being used from base test class.
 		List<HashMap<String,String>> data = obj.getJsonDataToMap();
-		return new Object[][]	{{data.get(0)},{data.get(1)}};
+		return new Object[][]	{{data.get(0)},{data.get(1)}};    //both the json indexes are being stored here.
 	}
 	
 }
