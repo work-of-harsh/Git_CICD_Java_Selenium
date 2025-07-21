@@ -7,7 +7,7 @@
         <methods>
           <include name="Mobile_Shop2"/>
           <include name="launching_form_filling_page"/>
-          <include name="Mobile_Shop1" invocation-numbers="0 1"/>
+          <include name="Mobile_Shop1"/>
           <include name="tearDowwn"/>
         </methods>
       </class> <!-- Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework -->

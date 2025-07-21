@@ -23,21 +23,21 @@ public class Form_Filling_Page extends AbstractComponent{    //inherited parent 
 	
 	//PageFactory design pattern.
 	@FindBy (xpath = "(//input)[1]")
-	WebElement username;                  // will be constructed as "//WebElement username = driver.findElement(By.xpath("(//input)[1]"));".Page factory cant be used only for locators. (By......)
+	private WebElement username;                  // will be constructed as "//WebElement username = driver.findElement(By.xpath("(//input)[1]"));".Page factory cant be used only for locators. (By......)
 	
 	@FindBy (xpath = "(//input)[2]")     
-	WebElement email;  
+	private WebElement email;             // example of encapsulation. web elements should be accessible to only methods (action methods ) of this class. 
 	
 	@FindBy (xpath = "(//input)[3]")
-	WebElement password;  
+	private WebElement password;  
 	
 	
 	@FindBy (xpath = "(//input)[10]")
-	WebElement display_name;  
+	private WebElement display_name;  
 	
 	
 	@FindBy (linkText = "Shop")
-	WebElement shopbutton;  
+	private WebElement shopbutton;  
 	 public Product_Cataloge_Page form_fliing(String user_name, String Email, String Password)     //return type is "Product_Cataloge_Page" not void because we are returning "Product_Cataloge_Page" object.
 	 
 	 {
@@ -46,8 +46,8 @@ public class Form_Filling_Page extends AbstractComponent{    //inherited parent 
 		 password.sendKeys(Password);
 		 System.out.println(display_name.getAttribute("value"));  //text not present so used :getAttribute("value")
 		 shopbutton.click();
-		 Product_Cataloge_Page product_catalogue = new Product_Cataloge_Page(driver);    //directly creating next page object here.
-		 return product_catalogue;
+		 Product_Cataloge_Page product_catalogue = new Product_Cataloge_Page(driver);    //directly creating next page object here. 
+		 return product_catalogue;   //form_fliing is action method as it gives access to next page.
 	 }
  
 	 

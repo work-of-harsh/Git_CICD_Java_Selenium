@@ -18,23 +18,25 @@ public class Listeners extends BaseTest implements ITestListener{
 	
 	ExtentTest test;
 	
-	ExtentReports extent = ExtentReporterNG.getReportObject();
+	ExtentReports extent = ExtentReporterNG.getReportObject();   //this class present in resources package.
+	ThreadLocal<ExtentTest> extentTest = new ThreadLocal();   //for thread safety
 	@Override
-	public void onTestStart(ITestResult result) {             //this method executes first before the test starts.
+	public void onTestStart(ITestResult result) {             //this method executes first before the test execution starts. TestNG scans all the methods under @Test annotation one by one and passes to the "result" as per the execution. 
 		test = extent.createTest(result.getMethod().getMethodName());
+		extentTest.set(test);   //assigns unique thread id to test object.
 	}
 
-	@Override
+	@Override    //runs after test execution
 	public void onTestSuccess(ITestResult result) {
 		
 		test.log(Status.PASS, "Test Passed");
 		
 	}
 
-	@Override
+	@Override   //capturing screenshot on failure
 	public void onTestFailure(ITestResult result) {
 		
-		test.fail(result.getThrowable());
+		extentTest.get().fail(result.getThrowable());   //extentTest.get() provides thread safety on test failure
 		
 		try {
 			driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
@@ -71,7 +73,7 @@ public class Listeners extends BaseTest implements ITestListener{
 		
 	}
 
-	@Override
+	@Override //last method to run
 	public void onFinish(ITestContext context) {
 		
 		extent.flush();         //this steps generates report

@@ -16,6 +16,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -30,11 +32,13 @@ public class BaseTest {
 
 	public WebDriver driver;
 	public Form_Filling_Page form_filling_page;                   //putting public before variable so child classes can use it outside method.
+	
+	
 	public WebDriver initializeDriver() throws IOException {
 		
 		
 		
-		//properties class
+		//properties class  properties file shoilld have .properties extension.
 		Properties prop =new Properties();
 		FileInputStream fil = new FileInputStream("/Users/Lenovo/eclipse-workspace/Selenium_Framework_Harsh/src/main/java/Harsh_Project/resources/GlobalData.properties");
 		prop.load(fil);
@@ -46,10 +50,21 @@ public class BaseTest {
 		ChromeOptions options = new ChromeOptions();
 		options.setAcceptInsecureCerts(true); 
 		
-		driver = new ChromeDriver(options);        }          //driver here connected with global variable WebDriver driver;
+		driver = new ChromeDriver(options);        }          //driver here connected with global variable WebDriver driver
+		
+		else if (browsername.equalsIgnoreCase("firefox")) {
+		   // WebDriverManager.firefoxdriver().setup(); // Sets up the Firefox driver
+			System.setProperty("webdriver.gecko.driver", "D:\\geckodriver.exe"); 
+		    FirefoxOptions options = new FirefoxOptions();
+		    options.setAcceptInsecureCerts(true); // Accepts insecure certificates
+
+		    driver = new FirefoxDriver(options); // Launches Firefox with the configured options
+		    System.out.println("Launching Firefox browser with insecure certs accepted...");
+		}
+
 		
 		else 
-		{  //firefox browser initialization  .  
+		{  //another browser initialization  .  
 			}
 		
 	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -58,7 +73,7 @@ public class BaseTest {
 		
 		
 	}
-	@BeforeMethod
+	@BeforeMethod 
 	public Form_Filling_Page launching_form_filling_page() throws IOException     //providing driver to the first page of the page object file.
 	{
 		driver = initializeDriver();
@@ -86,13 +101,13 @@ public class BaseTest {
 		
 		public  List<HashMap<String, String>> getJsonDataToMap() throws IOException {
 			
-			//read json to string
+			//read json to string using FileUtils.readFileToString
 			String Json_content = FileUtils.readFileToString(new File("C:\\Users\\Lenovo\\eclipse-workspace\\Selenium_Framework_Harsh\\src\\test\\java\\Harsh_Project\\data\\Input_data_file.json"),StandardCharsets.UTF_8);
 		    //String to Hashmap using Jakson Databind
 			ObjectMapper mapper = new ObjectMapper();
 			List<HashMap<String, String>> data_of_json = mapper.readValue(Json_content, new TypeReference<List<HashMap<String, String>>>() {
 		      });
-			  return data_of_json;
+			  return data_of_json;  //returning a list of hash maps.
 		
 		}
 

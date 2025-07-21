@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/3</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Apr 20 20:32:20 IST 2025</td>
+<td>Started on:</td><td>Sun May 04 18:32:35 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>87 seconds (87924 ms)</td>
+<tr><td>Total time:</td><td>55 seconds (55884 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,115 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework.launching_form_filling_page()'><b>launching_form_filling_page</b><br>Test class: Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;LENOVO-PC&apos;, ip: &apos;192.168.50.19&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:155)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:150)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at Harsh_Project.Test_Components.BaseTest.initializeDriver(BaseTest.java:60)
+	at Harsh_Project.Test_Components.BaseTest.launching_form_filling_page(BaseTest.java:78)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Driver server process died prematurely.
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;17.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:246)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:117)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 28 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2109593301", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2109593301'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;LENOVO-PC&apos;, ip: &apos;192.168.50.19&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:155)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:150)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at Harsh_Project.Test_Components.BaseTest.initializeDriver(BaseTest.java:60)
+	at Harsh_Project.Test_Components.BaseTest.launching_form_filling_page(BaseTest.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Driver server process died prematurely.
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;17.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:246)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:117)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 28 more
+</pre></div></td>
+<td>47</td>
+<td>Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework@524f3b3a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework.launching_form_filling_page()'><b>launching_form_filling_page</b><br>Test class: Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework</td>
+<td></td>
+<td>-1746363803</td>
+<td>Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework@524f3b3a</td></tr>
+<tr>
+<td title='Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework.tearDowwn()'><b>tearDowwn</b><br>Test class: Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework</td>
+<td></td>
+<td>-1746363803</td>
+<td>Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework@524f3b3a</td></tr>
+<tr>
+<td title='Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework.tearDowwn()'><b>tearDowwn</b><br>Test class: Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework</td>
+<td></td>
+<td>-1746363803</td>
+<td>Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework@524f3b3a</td></tr>
+<tr>
+<td title='Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework.tearDowwn()'><b>tearDowwn</b><br>Test class: Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework</td>
+<td></td>
+<td>-1746363803</td>
+<td>Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework@524f3b3a</td></tr>
+<tr>
+<td title='Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework.launching_form_filling_page()'><b>launching_form_filling_page</b><br>Test class: Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework</td>
+<td></td>
+<td>-1746363803</td>
+<td>Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework@524f3b3a</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,25 +184,222 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework.Mobile_Shop1()'><b>Mobile_Shop1</b><br>Test class: Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework<br>Parameters: {country=India, password=thug, success_message=Success! Thank you! Your order will be delivered in next few weeks :-)., name=Harsh Vibhor Singh, mobilename=Nokia Edge, email=thug@tcs.com}</td>
-<td></td>
-<td>14</td>
-<td>Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework@7b36aa0c</td></tr>
-<tr>
-<td title='Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework.Mobile_Shop1()'><b>Mobile_Shop1</b><br>Test class: Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework<br>Parameters: {country=China, password=thug, success_message=Success! Thank you! Your order will be delivered in next few weeks :-)., name=Harsh Vibhor Singh, mobilename=Blackberry, email=thug@tcs.com}</td>
-<td></td>
-<td>8</td>
-<td>Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework@7b36aa0c</td></tr>
-<tr>
-<td title='Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework.Mobile_Shop2()'><b>Mobile_Shop2</b><br>Test class: Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework</td>
-<td></td>
-<td>18</td>
-<td>Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework@7b36aa0c</td></tr>
-<tr>
 <td title='Harsh_Project.Selenium_Framework_Harsh.ShopPage.PageShop()'><b>PageShop</b><br>Test class: Harsh_Project.Selenium_Framework_Harsh.ShopPage</td>
 <td></td>
-<td>31</td>
-<td>Harsh_Project.Selenium_Framework_Harsh.ShopPage@7d4f9aae</td></tr>
+<td>55</td>
+<td>Harsh_Project.Selenium_Framework_Harsh.ShopPage@4f0100a7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework.Mobile_Shop2()'><b>Mobile_Shop2</b><br>Test class: Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;LENOVO-PC&apos;, ip: &apos;192.168.50.19&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:155)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:150)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at Harsh_Project.Test_Components.BaseTest.initializeDriver(BaseTest.java:60)
+	at Harsh_Project.Test_Components.BaseTest.launching_form_filling_page(BaseTest.java:78)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Driver server process died prematurely.
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;17.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:246)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:117)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 28 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace977240765", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace977240765'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;LENOVO-PC&apos;, ip: &apos;192.168.50.19&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:155)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:150)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at Harsh_Project.Test_Components.BaseTest.initializeDriver(BaseTest.java:60)
+	at Harsh_Project.Test_Components.BaseTest.launching_form_filling_page(BaseTest.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Driver server process died prematurely.
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;17.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:246)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:117)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 28 more
+</pre></div></td>
+<td>0</td>
+<td>Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework@524f3b3a</td></tr>
+<tr>
+<td title='Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework.Mobile_Shop1()'><b>Mobile_Shop1</b><br>Test class: Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework<br>Parameters: {country=India, password=thug, success_message=Success! Thank you! Your order will be delivered in next few weeks :-)., name=Harsh Vibhor Singh, mobilename=Nokia Edge, email=thug@tcs.com}</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;LENOVO-PC&apos;, ip: &apos;192.168.50.19&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:155)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:150)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at Harsh_Project.Test_Components.BaseTest.initializeDriver(BaseTest.java:60)
+	at Harsh_Project.Test_Components.BaseTest.launching_form_filling_page(BaseTest.java:78)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Driver server process died prematurely.
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;17.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:246)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:117)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 28 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace377684432", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace377684432'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;LENOVO-PC&apos;, ip: &apos;192.168.50.19&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:155)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:150)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at Harsh_Project.Test_Components.BaseTest.initializeDriver(BaseTest.java:60)
+	at Harsh_Project.Test_Components.BaseTest.launching_form_filling_page(BaseTest.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Driver server process died prematurely.
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;17.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:246)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:117)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 28 more
+</pre></div></td>
+<td>0</td>
+<td>Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework@524f3b3a</td></tr>
+<tr>
+<td title='Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework.Mobile_Shop1()'><b>Mobile_Shop1</b><br>Test class: Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework<br>Parameters: {country=China, password=thug, success_message=Success! Thank you! Your order will be delivered in next few weeks :-)., name=Harsh Vibhor Singh, mobilename=Blackberry, email=thug@tcs.com}</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;LENOVO-PC&apos;, ip: &apos;192.168.50.19&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:155)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:150)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at Harsh_Project.Test_Components.BaseTest.initializeDriver(BaseTest.java:60)
+	at Harsh_Project.Test_Components.BaseTest.launching_form_filling_page(BaseTest.java:78)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Driver server process died prematurely.
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;17.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:246)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:117)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 28 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1932509362", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1932509362'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;LENOVO-PC&apos;, ip: &apos;192.168.50.19&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:155)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:150)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at Harsh_Project.Test_Components.BaseTest.initializeDriver(BaseTest.java:60)
+	at Harsh_Project.Test_Components.BaseTest.launching_form_filling_page(BaseTest.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Driver server process died prematurely.
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;17.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:246)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:117)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 28 more
+</pre></div></td>
+<td>0</td>
+<td>Harsh_Project.Selenium_Framework_Harsh.ShopPage_with_framework@524f3b3a</td></tr>
 </table><p>
 </body>
 </html>

@@ -64,6 +64,7 @@ public class ShopPage_with_framework extends BaseTest{
 		Data_Reader obj = new Data_Reader();  //this data reader is being used from base test class.
 		List<HashMap<String,String>> data = obj.getJsonDataToMap();
 		return new Object[][]	{{data.get(0)},{data.get(1)}};    //both the json indexes are being stored here.
+	      //Object[][] has two rows one column. Test case runs two times as there are 2 rows.
 	}
 	
 }

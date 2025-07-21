@@ -14,6 +14,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -25,7 +26,9 @@ public class ShopPage2_Fail_TestCase {
 
 	{
 		WebDriverManager.chromedriver().setup();    //downloads lastes chromedriver version base on chrome browser version.
-		WebDriver driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.setAcceptInsecureCerts(true); 
+		WebDriver driver = new ChromeDriver(options);
 	    driver.get("https://rahulshettyacademy.com/angularpractice/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();

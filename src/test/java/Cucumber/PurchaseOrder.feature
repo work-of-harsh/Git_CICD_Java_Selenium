@@ -1,5 +1,5 @@
 #Author: your.email@your.domain.com
-#Keywords Summary :
+#Keywords Summary
 #Feature: List of scenarios. (High level senarios).
 #Scenario: Business rule through list of steps with arguments (Test Case).
 #Given: Some precondition step
